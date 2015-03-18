@@ -97,13 +97,13 @@ application/epub+zip
 [備考]
 
 * リフロー型との違いは以下の点
-   <package> 要素に prefix の行を追加
-   <!-- Fixed-Layout Documents指定 --> 部分に <meta> 要素を２つ追加
+   `<package>` 要素に prefix の行を追加
+   `<!-- Fixed-Layout Documents指定 -->` 部分に `<meta>` 要素を２つ追加
    スタイルシートは fixed-layout-jp.css のみ
-   <spine> 要素の <itemref> で、カバーページに「properties="rendition:page-spread-center"」を追加
-   <spine> 要素の <itemref> で、カバー画像以外は左右ページを必ず対になるよう指定
+   `<spine>` 要素の `<itemref>` で、カバーページに「properties="rendition:page-spread-center"」を追加
+   `<spine>` 要素の `<itemref>` で、カバー画像以外は左右ページを必ず対になるよう指定
    ※その他はリフロー型と同じ
-* <spine> 要素の <itemref> で、idref の値が重複していると何も表示しなかったり（Readium）、ページがループする （Firefox の EPUBReader）ものなどがあるので、同じ画像を２度以上表示したいときは、念のため画像を呼び出す xhtml ファイルを別に用意することを推奨する（２度目の白画像なら white2.xhtml など）
+* `<spine>` 要素の `<itemref>` で、idref の値が重複していると何も表示しなかったり（Readium）、ページがループする （Firefox の EPUBReader）ものなどがあるので、同じ画像を２度以上表示したいときは、念のため画像を呼び出す xhtml ファイルを別に用意することを推奨する（２度目の白画像なら white2.xhtml など）
 
 ```
 ---------------------------------[sample code]---------------------------------
