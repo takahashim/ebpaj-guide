@@ -13,3 +13,6 @@
 * [Ａ．リフロー型](./reflow-type.md)
 * [Ｂ．固定レイアウト型](./fixed-type.md)
 * [書式一覧](./format.md)
+* [デフォルトCSSについて](./default-css.md)
+* 更新履歴
+
