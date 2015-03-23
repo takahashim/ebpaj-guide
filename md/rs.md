@@ -573,7 +573,7 @@ blockquote要素 / ul要素 / dl要素 / dt要素 / dd要素 / figure要素 / fi
 
 em要素 / strong要素 / pre要素 / subとsup要素 / i要素 / b要素 / u要素 / s要素 / small要素
 cite要素 / q要素 / dfn要素 / abbr要素 / time要素 / code要素 / var要素 / samp要素 / kbd要素
-mark要素 / rp要素 / bdi要素 / bdo要素 / wbr要素 / rb要素 / rtc要素 / rp要素
+mark要素 / bdi要素 / bdo要素 / wbr要素 / rb要素 / rtc要素 / rp要素
 
 #### 訂正
 

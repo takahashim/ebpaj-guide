@@ -281,7 +281,6 @@ class="em-triangle-open"      ： 三角（白抜き）
 #### 【CSS class】
 
 ```
-class="decoration-none" ： 傍線、打ち消し線のクリア
 class="em-line"         ： 縦組み時は右線、横組み時は下線
 class="em-line-outside" ： 縦組み時は左線、横組み時は上線
 ```
@@ -304,7 +303,6 @@ class="em-line-outside" ： 縦組み時は左線、横組み時は上線
 
 
 ```
-class="decoration-none" ： 傍線、打ち消し線のクリア
 class="line-through"    ： 打ち消し線（一本線）
 ```
 
@@ -410,6 +408,8 @@ max-width-***per ： 画像の幅の最大値を、画面の幅に対する比�
 max-size-*em     ： 画像の高さと幅の最大値を、文字数で指定
 max-size-***per  ： 画像の高さと幅の最大値を、画面の高さと幅に対する比率で指定
 ```
+
+※その他、auto、none、0 など、利用可能な値は後述の「■ボックスの扱い」→「サイズ」の項を参照 
 
 例）画像を縮小して行内に表示
 
@@ -745,7 +745,7 @@ class="align-justify" ： 行頭揃え（行の下端が揃うよう文字間を
 #### 【CSS class】
 
 ```
-class="start-*em"
+class="start-*em" （"start-0" も可）
 ```
 
 例）行頭から一括で４字下げ
@@ -786,7 +786,7 @@ class="start-*em"
 #### 【CSS class】
 
 ```
-class="end-*em"
+class="end-*em" （"end-0" も可）
 ```
 
 例）行末から４字上げ
@@ -810,7 +810,7 @@ class="end-*em"
 #### 【CSS class】
 
 ```
-class="indent-*em" ： 行頭からのインデントを文字数で指定
+class="indent-*em" ： 行頭からのインデントを文字数で指定 （"indent-0" も可）
 ```
 
 例）一括行頭１字下げ
@@ -837,7 +837,7 @@ class="indent-*em" ： 行頭からのインデントを文字数で指定
 #### 【CSS class】
 
 ```
-class="h-indent-*em" ： 折り返した行の開始位置を、行頭からの文字数で指定
+class="h-indent-*em" ： 折り返した行の開始位置を、行頭からの文字数で指定（"h-indent-0" も可）
 ```
 
 例）折り返した行を、１行目の３文字目と頭を揃えて表示
@@ -937,7 +937,7 @@ class="line-height-*em"    ： 行高を文字数で指定
 
 ```
 class="lspacing-normal" ： 文字間を RS のデフォルトに
-class="lspacing-*em"    ： 文字間を 文字数で指定
+class="lspacing-*em"    ： 文字間を 文字数で指定（"lspacing-0" も可）
 ```
 
 例）４分アキに
@@ -1287,17 +1287,17 @@ class="p-*"
 #### [値の詳細]
 
 ```
-p-auto / p-0 / p-***per / p-*em ： 四方のマージンを指定（auto、ゼロ、％指定、文字数指定）
+p-0 / p-***per / p-*em ： 四方のパディングを指定（ゼロ、％指定、文字数指定）
 
-p-top-auto    / p-top-0    / p-top-***per    / p-top-*em    ： 画面上部のマージンを指定
-p-bottom-auto / p-bottom-0 / p-bottom-***per / p-bottom-*em ： 画面下部のマージンを指定
-p-right-auto  / p-right-0  / p-right-***per  / p-right-*em  ： 画面右部のマージンを指定
-p-left-auto   / p-left-0   / p-left-***per   / p-left-*em   ： 画面左部のマージンを指定
+p-top-0    / p-top-***per    / p-top-*em    ： 画面上部のパディングを指定
+p-bottom-0 / p-bottom-***per / p-bottom-*em ： 画面下部のパディングを指定
+p-right-0  / p-right-***per  / p-right-*em  ： 画面右部のパディングを指定
+p-left-0   / p-left-***per   / p-left-*em   ： 画面左部のパディングを指定
 
-p-start-auto  / p-start-0  / p-start-***per  / p-start-*em  ： 行頭のマージンを指定
-p-end-auto    / p-end-0    / p-end-***per    / p-end-*em    ： 行末のマージンを指定
-p-before-auto / p-before-0 / p-before-***per / p-before-*em ： 行前方のマージンを指定
-p-after-auto  / p-after-0  / p-after-***per  / p-after-*em  ： 行後方のマージンを指定
+p-start-0  / p-start-***per  / p-start-*em  ： 行頭のパディングを指定
+p-end-0    / p-end-***per    / p-end-*em    ： 行末のパディングを指定
+p-before-0 / p-before-***per / p-before-*em ： 行前方のパディングを指定
+p-after-0  / p-after-***per  / p-after-*em  ： 行後方のパディングを指定
 ```
 
 
@@ -1383,7 +1383,6 @@ max-size-none    / max-size-***per    / max-size-*em    ： 高さと幅を同�
 #### 【CSS class】
 
 ```
-class="k-clear"  ： 罫線のクリア
 class="k-solid"  ： 実線の囲み罫
 class="k-dotted" ： 点線の囲み罫
 class="k-double" ： 二重線の囲み罫
@@ -1417,10 +1416,6 @@ class="k-solid-white " ： 実線の囲み罫（白色）
 ### ・罫線
 
 #### 【CSS class】
-
-```
-class="k-clear"    ： 罫線のクリア
-```
 
 線種
 
